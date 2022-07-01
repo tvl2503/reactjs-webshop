@@ -1,0 +1,54 @@
+.swiper{
+    width: 100%;
+    height: 500px;
+    .swiper-slide{
+        position: relative;
+        height: 100%;
+        text-align: center;
+        font-size: 18px;
+        background: #fff;
+        img {
+            display: block;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        &__item__info{
+            position: absolute ;
+            top: 200px;
+            left: 150px;
+            &__subtitle{
+                font-size: 20px;
+                @include mobile{
+                    font-size: 14px;
+                }
+            }
+            &__title{
+                font-size: 60px;
+                @include mobile{
+                   font-size: 32px;
+                }
+            }
+            .btn{
+                @include mobile{
+                 
+                }
+            }
+            @include tablet{
+                top: 100px;
+                left: 80px;
+            }
+            @include mobile{
+                top: 100px;
+                left:20px;
+            }
+        }
+        &__item__image{
+            height: 100%;
+        }
+    }
+}
+
+
+  

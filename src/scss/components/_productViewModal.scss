@@ -1,0 +1,61 @@
+
+.product-view__modal{
+    
+    
+    &__backdrop{
+        z-index: 99;
+        position: fixed;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        overflow: auto;
+        background-color: rgba(0, 0, 0, 0.4);
+    }
+
+    &__content {
+        overflow-y: scroll;
+        top: 5%;
+        width: 80%;
+        left: 10%;
+        position: fixed;
+        z-index: 100;
+        padding: 0 1rem;
+        background-color: #fff;
+        min-height: 80vh;
+        @include tablet{
+            width: 80%;
+            left: 5%;
+        }
+        @include mobile{
+            width: 80%;
+            left: 0;
+        }
+        animation: slide-down 300ms ease-out forwards;
+     
+        &__close {
+            height: 30px;
+            position: absolute;
+            right: 15px;
+            top: 10px;
+            background-color: transparent;
+            border: none;
+            font-size: 1.5rem;
+            margin: auto;
+
+        }
+    }
+
+
+}
+@keyframes slide-down {
+    from {
+        opacity: 0;
+        transform: translateY(-3rem);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

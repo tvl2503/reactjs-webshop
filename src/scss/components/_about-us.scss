@@ -1,0 +1,50 @@
+.about-us{
+    margin-bottom: 50px;
+    &__img{
+        margin: 50px;
+        text-align: center;
+        img{
+            width: 350px;
+        }
+    }
+    &__content{
+        margin: 50px;
+        .text{
+            font-weight: normal;
+            font-size: 1.5rem;
+        }
+        &__title{
+            font-size: 2rem;
+            margin-bottom: 5px;
+            font-weight: 600;
+        }
+        .information{
+            margin: 25px 0;
+            li{
+                display: flex;
+                align-items: center;
+                margin-bottom: 5px;
+                .information__icon{
+                    margin-right: 15px;
+                    color: #ff324d;
+                }
+                .saprater{
+                    margin: 0 35px;
+                }
+                p{
+                    margin: 0;
+                }
+            }
+        }
+        .expertise{
+            font-size: 19px;
+            margin-right: 10px;
+            .item{
+                display: flex;
+                .expertise-logo{
+                    margin-right: 5px;
+                }
+            }
+        }
+    }
+}

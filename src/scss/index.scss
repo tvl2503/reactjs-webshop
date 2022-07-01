@@ -1,0 +1,21 @@
+@import "./variables";
+@import "./mixins";
+@import "./base";
+
+@import "./components/navbar";
+@import "./components/slider";
+@import "./components/breadcrumb";
+@import "./components/login";
+@import "./components/productview";
+@import "./components/productlist";
+@import "./components/productViewModal";
+@import "./components/cart";
+@import "./components/pagination";
+@import "./components/policy-card";
+@import "./components/notfound";
+@import "./components/checkout";
+@import "./components/contact";
+@import "./components/order-succes";
+
+@import "./components/loading";
+@import "./components/about-us";

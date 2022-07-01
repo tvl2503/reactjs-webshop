@@ -1,0 +1,1 @@
+export const CORE_API = "https://api-nodejssss.herokuapp.com/api/";

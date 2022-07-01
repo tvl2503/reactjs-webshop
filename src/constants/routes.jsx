@@ -1,0 +1,14 @@
+export const HOME_PAGE = "";
+export const PRODUCT = "product/:id";
+export const PRODUCTS = "products";
+export const CONTACT = "contact";
+export const CART = "cart";
+export const ABOUT_US = "about-us";
+export const LOGIN_PAGE = "login";
+export const REGISTER_PAGE = "register";
+export const NOTFOUND = "*";
+export const CHECKOUT = "checkout";
+export const ADDPRODUCT = "ADDPRODUCT";
+export const FORTGOTPASSWORD = "forgotpassword"
+export const RESETPASSWORD = "reset-password/:id/:token"
+export const CATEGORIES = "category"

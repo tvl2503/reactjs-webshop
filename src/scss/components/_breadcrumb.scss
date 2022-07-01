@@ -1,0 +1,45 @@
+.breadcrumb-section{
+    margin-top: $header-height;
+    background-color: #fff;
+    padding-bottom: 20px;
+    .container{
+        h1{
+            font-weight: 500;
+            font-size: 28px;
+            @include tablet{
+                font-weight: 500;
+                font-size: 20px;
+            }
+            @include mobile{
+                font-size: 16px;
+            }
+        }
+        @include flex(center, space-around);
+        @include tablet{
+            font-size: 12px;
+            
+        }
+        @include mobile{
+            display: block;
+            font-size: 10px;
+        }
+        .breadcrumb{
+            a{
+                color: unset;
+            }
+            a:hover {
+                color: $main-color;
+            }
+            display: flex;
+            &--item{
+                display: flex;
+            }
+            .active{
+                color: #687188;
+                span{
+                    padding-left: 5px;
+                }
+            }
+        }
+    }
+}

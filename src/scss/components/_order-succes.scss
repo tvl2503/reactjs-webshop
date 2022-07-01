@@ -1,0 +1,20 @@
+.order--success{
+
+    width: 60%;
+    text-align: center;
+    margin: auto;
+    margin-bottom: 50px;
+    .title{
+        margin-top: 50px;
+        font-size: 2rem;
+        color: rgb(10, 199, 73);
+    }
+    .description{
+        margin: 20px 0;
+        font-size: 1.5rem;
+    }
+    .name{
+        padding: 20px;
+           font-weight: 600;
+       } 
+}

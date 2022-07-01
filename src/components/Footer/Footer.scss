@@ -1,0 +1,74 @@
+@import "../../scss/mixins";
+@import "../../scss/variables";
+.footer{
+    padding: 40px 10px 0 10px;
+    background-color: #000;
+    color: white;
+    text-align: center;
+    a{
+        color: unset;
+    }
+    a:hover {
+        color: $main-color;
+    }
+    &__top{
+        padding-bottom: 20px;
+        border-bottom: 1px solid rgb(36, 34, 34);
+        &__logo{
+            height: 50px;
+        }
+        &__title{
+            margin-bottom: 2rem;
+            font-weight: 600;
+            font-size: 1.5rem;
+        }
+        &__content{
+            p{
+                margin-bottom: 1rem;
+            }
+        }
+        &__about {
+            
+            p {
+                margin-bottom: 1.5rem;
+    
+            }
+            ul{
+                
+                display: flex;
+                justify-content: space-between;
+                li{
+                    
+                    font-size: 1.5rem;
+    
+                }
+                li ~ li {
+                    margin-left: 10px;
+                }
+            }
+        }
+    }
+    &__bottom{
+        display: flex;
+        padding: 20px 0;
+        align-items: center;
+        justify-content: space-around;
+        @include mobile{
+            flex-direction: column;
+        }
+        &__payment{
+            ul{
+                margin-bottom: 0;
+                display: flex;
+                font-size: 2rem;
+                
+                li ~ li{
+                    margin-left: 10px;
+                }
+                img{
+                    height: 30px;
+                }
+            }
+        }
+    }
+}

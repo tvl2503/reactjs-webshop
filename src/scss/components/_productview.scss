@@ -1,0 +1,181 @@
+.product{
+    padding: 2rem;
+    margin-top: 20px;
+    &__images{
+        width: 100%;
+        display: flex;
+        &__main{
+            overflow: hidden;
+            width: 80%;
+            @include tablet{
+                width: 100%;
+            }
+            img{
+                padding: 10px;
+                border: 1px solid #ccc;
+                width: 80%;
+                @include tablet{
+                    width: 80%;
+                }
+                transform: scale(1);
+                transition: transform 0.5s ease-in;
+
+            }
+            img:hover{
+                transform: scale(1.2);
+                transition: transform 0.5s ease-in;
+            }
+        }
+        &__list{
+            margin-top: 10px;
+            
+            @include tablet{
+                flex-direction: column;
+            }
+            @include mobile{
+                flex-direction: row;
+
+            }
+            width: 20%;
+        
+            &__item{
+                margin-bottom: 10px;
+                @include tablet{
+                    margin-left: 10px;
+                }
+                @include mobile{
+                    margin-left: 0;
+                }
+                width: 70%;
+                img{
+                    width: 100%;
+                    border: 1px solid #ccc;
+                }
+            }
+        }
+    }
+    &__info{
+        padding: 20px;
+        &__title{
+            font-size: 2rem;
+            @include tablet{
+                font-size: 1.5rem;
+                margin-bottom: 10px;
+            }
+            color: #ff324d;
+            font-weight: 600;
+            margin-bottom: 20px;
+        }
+        &__description{
+            font-size: 1rem;
+            font-style: italic;
+        }
+        &__item{
+            margin-top: 2rem;
+            &__price{
+                color: $main-color;
+                font-size: 1.5rem;
+                font-weight: 600;
+            }
+            del{
+                color: #687188;
+                padding-left: 20px;
+                font-size: 1.5rem;
+            }
+            .on-sale{
+                color: #388e3c;
+                font-size: 14px;
+                padding-left: 20px;
+            }
+            &__policy{
+                color: #ff324d;
+                li{
+                   display: flex;
+                   i{
+                       font-size: 20px;
+                   }
+                   p{
+                       padding-left: 20px;
+                       color: #687188;
+                   } 
+                }
+                
+            }
+            &__title{
+                font-size: 1.5rem;
+                font-weight: 600;
+                margin-bottom: 1rem;
+            }
+            &__list{
+                @include flex(center, flex-start);
+                &__item{
+                    @include flex(center, center);
+                    width: 50px;
+                    height: 50px;
+                    border-radius: 50%;
+                    border: 2px solid $txt-second-color;
+                    cursor: pointer;
+                    margin-right: 1rem;
+                    @include mobile{
+                        width: 30px;
+                        height: 30px;
+                    }
+                    &.active {
+                        border-color: $main-color;
+                    }
+
+                    &:hover {
+                        border-color: $main-color;
+                    }
+                    .circle {
+                        width: 40px;
+                        height: 40px;
+                        border-radius: 50%;
+
+                        @include mobile {
+                            width: 20px;
+                            height: 20px;
+                        }
+                    }
+                    &__size {
+                        font-size: 1.5rem;
+                        text-transform: uppercase;
+                    }
+                }
+            }
+            &__quantity {
+                @include flex(flex-start, flex-start);
+                
+                &__btn {
+                    @include flex(center, center);
+                    width: 30px;
+                    height: 30px;
+                    border: none;
+                    font-size: 1.5rem;
+                    cursor: pointer;
+                }
+
+                &__input {
+                    @include flex(center, center);
+                    height: 30px;
+                    min-width: 50px;
+                    max-width: 70px;
+                    font-size: 1.5rem;
+                    text-align: center;
+                    
+               
+                    
+                    input{
+          
+                        height: 100%;
+                        border: none;
+                        text-align: center;
+                    }
+                }
+            }
+        }
+    }
+    .action img{
+        border: 1px solid #ff324d;
+    }
+}

@@ -1,0 +1,60 @@
+@import '../../scss/mixins';
+@import '../../scss/variables';
+
+.btn {
+    border: 0;
+    outline: 0;
+    color: white;
+    font-size: 1.5rem;
+    font-weight: 500;
+    cursor: pointer;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+    
+    background-color: transparent;
+    border-radius: 4px;
+    transition: 0.5s all ease-in-out;
+    height: 50px;
+    @include mobile {
+        font-size: 1rem;
+    }
+    &__txt {
+        padding: 1rem 2rem;
+    }
+
+    &-sm {
+        font-size: 1rem;
+    }
+
+    &-sm &__txt {
+        padding: 0.7rem 1.5rem;
+    }
+
+    &-block {
+        width: 100%;
+    }
+}
+.btn:hover{
+    cursor: pointer;
+    color: #ff324d;
+    border: 1px solid #ff324d;
+}
+.btn::before, .btn::after {
+    transition: 0.5s all ease-in-out;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 51%;
+    bottom: 0;
+    content: "";
+    background-color: #ff324d;
+    z-index: -1;
+}
+.btn::after{
+    right: 0;
+    left: auto;
+}
+.btn:hover::before,.btn:hover::after{
+    width: 0;
+}

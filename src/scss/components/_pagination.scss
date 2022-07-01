@@ -1,0 +1,22 @@
+.pagination{
+    width: 100%;
+    text-align: center;
+    margin: 30px 0;
+    li{
+        border-radius: 50px;
+        .ant-pagination-item-link{
+            border-radius: 50px;
+    
+        }
+
+        
+    }
+    .ant-pagination-item-active{
+        background: #ff324d;
+        border: 1px #ff324d;
+        a{
+            color: white;
+        }
+        
+    }
+}
