@@ -24,7 +24,7 @@ const ForgotPassWord = () => {
         }
         else{
             try{
-                const res = await publicRequest.post("/resetpassword", {email: email})
+                 await publicRequest.post("/resetpassword", {email: email})
                 setLoading(false)
                 setMessage(true)
             }catch(err){

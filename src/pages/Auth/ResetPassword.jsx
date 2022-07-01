@@ -15,8 +15,6 @@ import { toast } from 'react-toastify';
          password: '',
          confirmpassword: ''
      })
-     const [msg, setMsg] = useState("");
-     const [error, setError] = useState("");
      const param = useParams();
      const url = `/resetpassword/${param.id}/${param.token}`;
      const handleOnChange = ({currentTarget: input}) =>{
@@ -38,7 +36,7 @@ import { toast } from 'react-toastify';
          try{
             const res = await publicRequest.post(url, {password: pass.password})
             toast.success(res.data.message);
-            setMsg()
+    
             window.location = "/auth/login"
          }catch(error){
             if (

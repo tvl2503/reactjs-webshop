@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import { useSelector} from 'react-redux'
 import Input from '../../components/Input'
-import { publicRequest, userRequest } from '../../services/requesMethods'
+import { publicRequest } from '../../services/requesMethods'
 import Button from '../../components/Button'
 import Table from '../../components/Table'
 import { toast } from 'react-toastify'
@@ -60,7 +60,7 @@ const Categories = () => {
   }
   const handleOnClick  = async () => {
     try{ 
-      const res = await publicRequest.post("/categories", {title: category},
+       await publicRequest.post("/categories", {title: category},
       {
         headers: { token : `Bearer ${currentUser.accessToken}`}
        } 

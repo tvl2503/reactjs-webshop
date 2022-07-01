@@ -1,4 +1,4 @@
-import { userRequest, publicRequest } from "../requesMethods";
+import {  publicRequest } from "../requesMethods";
 import { getProductsToCart,removeCart } from "../../redux/cart/cartSlice";
 export const addtoCart = async (dispatch, product) => {
     try {
